@@ -1,0 +1,11 @@
+# Trained weights exceed GitHub's 100 MB file limit: they are attached to the GitHub Release instead
+# (see README, "Loading and testing the trained models"). Configs and tokenizer files stay in the repository.
+models/**/*.pt
+
+# smoke-test runs, caches, editor files
+_smoke_test/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+report/~$*
+*.tmp
