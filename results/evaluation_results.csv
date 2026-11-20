@@ -1,0 +1,22 @@
+experiment,configuration,train_questions,max_length,input,EM,F1,val_loss
+A architecture,A1 Transformer from scratch,87599,384,sliding_window,10.529801324503312,20.09421292041953,4.074978345933229
+A architecture,A2 DistilBERT (truncation),87599,384,truncation,78.06054872280038,85.88521824229029,1.0949348976393296
+A architecture,A3 DistilBERT + sliding windows,87599,384,sliding_window,77.69157994323557,85.67271134481943,1.1030011152301415
+C/D sequence length & truncation,"A3 trained at 128, evaluated with sliding windows",87599,128,sliding_window,77.59697256385998,85.22517497917991,
+C/D sequence length & truncation,"A3 trained at 128, evaluated with truncation",87599,128,truncation,64.1438032166509,71.538945870504,
+C/D sequence length & truncation,"A3 trained at 256, evaluated with sliding windows",87599,256,sliding_window,77.55912961210974,85.73927806126545,
+C/D sequence length & truncation,"A3 trained at 256, evaluated with truncation",87599,256,truncation,76.65089877010406,84.81742177017486,
+C/D sequence length & truncation,"A3 trained at 384, evaluated with sliding windows",87599,384,sliding_window,77.69157994323557,85.67271134481943,
+C/D sequence length & truncation,"A3 trained at 384, evaluated with truncation",87599,384,truncation,77.51182592242195,85.45954974552484,
+D shortened paragraphs,"A3, paragraphs cut to 25%",87599,384,sliding_window,28.079470198675494,34.09665646254134,
+D shortened paragraphs,"A3, paragraphs cut to 50%",87599,384,sliding_window,47.5685903500473,54.52433404212469,
+D shortened paragraphs,"A3, paragraphs cut to 75%",87599,384,sliding_window,62.76253547776727,70.5030262885833,
+D shortened paragraphs,"A3, paragraphs cut to 100%",87599,384,sliding_window,77.69157994323557,85.67271134481943,
+B data size,"A3 DistilBERT + windows, 10% of training data",8760,384,sliding_window,63.803216650898776,74.40372982968853,
+B data size,"A3 DistilBERT + windows, 25% of training data",21900,384,sliding_window,70.54872280037843,80.10090328050146,
+B data size,"A3 DistilBERT + windows, 50% of training data",43800,384,sliding_window,74.8628192999054,83.5689432948718,
+B data size,"A3 DistilBERT + windows, 100% of training data",87599,384,sliding_window,77.69157994323557,85.67271134481943,
+B data size,"A1 Transformer from scratch, 10% of training data",8760,384,sliding_window,2.5827814569536423,9.697378992669563,
+B data size,"A1 Transformer from scratch, 25% of training data",21900,384,sliding_window,6.783349101229897,14.322208052307369,
+B data size,"A1 Transformer from scratch, 50% of training data",43800,384,sliding_window,8.202459791863765,16.54811174565627,
+B data size,"A1 Transformer from scratch, 100% of training data",87599,384,sliding_window,10.529801324503312,20.094212920419526,

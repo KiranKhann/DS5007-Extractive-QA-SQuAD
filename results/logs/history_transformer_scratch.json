@@ -1,0 +1,630 @@
+{
+  "run_name": "transformer_scratch",
+  "config": {
+    "arch": "scratch",
+    "scratch": {
+      "d_model": 256,
+      "n_heads": 4,
+      "n_layers": 4,
+      "d_ff": 1024,
+      "max_len": 512,
+      "dropout": 0.1
+    },
+    "input_strategy": "sliding_window",
+    "max_length": 384,
+    "doc_stride": 128,
+    "lr": 0.0005,
+    "batch_size": 32,
+    "epochs": 10,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "evals_per_epoch": 1,
+    "patience": 2,
+    "train_fraction": 1.0
+  },
+  "train_log": [
+    {
+      "step": 276,
+      "epoch": 0.09974701843151428,
+      "loss": 4.89584699920986,
+      "lr": 4.987350921575714e-05
+    },
+    {
+      "step": 552,
+      "epoch": 0.19949403686302855,
+      "loss": 4.483501730621725,
+      "lr": 9.974701843151428e-05
+    },
+    {
+      "step": 828,
+      "epoch": 0.2992410552945428,
+      "loss": 4.40007689120113,
+      "lr": 0.0001496205276472714
+    },
+    {
+      "step": 1104,
+      "epoch": 0.3989880737260571,
+      "loss": 4.275247918522877,
+      "lr": 0.00019949403686302856
+    },
+    {
+      "step": 1380,
+      "epoch": 0.4987350921575714,
+      "loss": 4.263431005719779,
+      "lr": 0.0002493675460787857
+    },
+    {
+      "step": 1656,
+      "epoch": 0.5984821105890856,
+      "loss": 4.145319828952569,
+      "lr": 0.0002992410552945428
+    },
+    {
+      "step": 1932,
+      "epoch": 0.6982291290206,
+      "loss": 4.086133533629818,
+      "lr": 0.0003491145645103
+    },
+    {
+      "step": 2208,
+      "epoch": 0.7979761474521142,
+      "loss": 4.073959205461585,
+      "lr": 0.00039898807372605713
+    },
+    {
+      "step": 2484,
+      "epoch": 0.8977231658836284,
+      "loss": 3.9995105603466863,
+      "lr": 0.00044886158294181423
+    },
+    {
+      "step": 2760,
+      "epoch": 0.9974701843151428,
+      "loss": 3.9592359696609387,
+      "lr": 0.0004987350921575714
+    },
+    {
+      "step": 3036,
+      "epoch": 1.0972172027466571,
+      "loss": 3.775605747690874,
+      "lr": 0.0004945990442918524
+    },
+    {
+      "step": 3312,
+      "epoch": 1.1969642211781713,
+      "loss": 3.8110362921935925,
+      "lr": 0.0004890575432678793
+    },
+    {
+      "step": 3588,
+      "epoch": 1.2967112396096856,
+      "loss": 3.765520485414975,
+      "lr": 0.00048351604224390637
+    },
+    {
+      "step": 3864,
+      "epoch": 1.3964582580412,
+      "loss": 3.7824517713076826,
+      "lr": 0.00047797454121993333
+    },
+    {
+      "step": 4140,
+      "epoch": 1.496205276472714,
+      "loss": 3.7953613435012707,
+      "lr": 0.00047243304019596035
+    },
+    {
+      "step": 4416,
+      "epoch": 1.5959522949042284,
+      "loss": 3.768008765966996,
+      "lr": 0.00046689153917198737
+    },
+    {
+      "step": 4692,
+      "epoch": 1.6956993133357428,
+      "loss": 3.7515630609747292,
+      "lr": 0.0004613500381480143
+    },
+    {
+      "step": 4968,
+      "epoch": 1.7954463317672569,
+      "loss": 3.7345583387043164,
+      "lr": 0.0004558085371240413
+    },
+    {
+      "step": 5244,
+      "epoch": 1.8951933501987712,
+      "loss": 3.7198254448780115,
+      "lr": 0.00045026703610006826
+    },
+    {
+      "step": 5520,
+      "epoch": 1.9949403686302856,
+      "loss": 3.701460657776266,
+      "lr": 0.00044472553507609523
+    },
+    {
+      "step": 5796,
+      "epoch": 2.0946873870618,
+      "loss": 3.4770530116467078,
+      "lr": 0.00043918403405212225
+    },
+    {
+      "step": 6072,
+      "epoch": 2.1944344054933143,
+      "loss": 3.5155967810879583,
+      "lr": 0.0004336425330281492
+    },
+    {
+      "step": 6348,
+      "epoch": 2.294181423924828,
+      "loss": 3.5428384352421416,
+      "lr": 0.00042810103200417623
+    },
+    {
+      "step": 6624,
+      "epoch": 2.3939284423563425,
+      "loss": 3.596840654594311,
+      "lr": 0.0004225595309802032
+    },
+    {
+      "step": 6900,
+      "epoch": 2.493675460787857,
+      "loss": 3.560602556968081,
+      "lr": 0.00041701802995623016
+    },
+    {
+      "step": 7176,
+      "epoch": 2.593422479219371,
+      "loss": 3.546116491590721,
+      "lr": 0.0004114765289322572
+    },
+    {
+      "step": 7452,
+      "epoch": 2.6931694976508855,
+      "loss": 3.4884570228016893,
+      "lr": 0.00040593502790828415
+    },
+    {
+      "step": 7728,
+      "epoch": 2.7929165160824,
+      "loss": 3.4984933733940125,
+      "lr": 0.0004003935268843111
+    },
+    {
+      "step": 8004,
+      "epoch": 2.892663534513914,
+      "loss": 3.548428878404092,
+      "lr": 0.00039485202586033813
+    },
+    {
+      "step": 8280,
+      "epoch": 2.992410552945428,
+      "loss": 3.530337882214698,
+      "lr": 0.0003893105248363651
+    },
+    {
+      "step": 8556,
+      "epoch": 3.0921575713769425,
+      "loss": 3.3159771535910814,
+      "lr": 0.0003837690238123921
+    },
+    {
+      "step": 8832,
+      "epoch": 3.191904589808457,
+      "loss": 3.3183729912059894,
+      "lr": 0.0003782275227884191
+    },
+    {
+      "step": 9108,
+      "epoch": 3.291651608239971,
+      "loss": 3.3674422783264215,
+      "lr": 0.00037268602176444604
+    },
+    {
+      "step": 9384,
+      "epoch": 3.3913986266714855,
+      "loss": 3.3326131951981695,
+      "lr": 0.00036714452074047306
+    },
+    {
+      "step": 9660,
+      "epoch": 3.491145645103,
+      "loss": 3.312696313512498,
+      "lr": 0.0003616030197165
+    },
+    {
+      "step": 9936,
+      "epoch": 3.5908926635345138,
+      "loss": 3.3597318149995115,
+      "lr": 0.000356061518692527
+    },
+    {
+      "step": 10212,
+      "epoch": 3.690639681966028,
+      "loss": 3.38899636786917,
+      "lr": 0.000350520017668554
+    },
+    {
+      "step": 10488,
+      "epoch": 3.7903867003975424,
+      "loss": 3.3555822251499565,
+      "lr": 0.000344978516644581
+    },
+    {
+      "step": 10764,
+      "epoch": 3.890133718829057,
+      "loss": 3.4021319937014924,
+      "lr": 0.000339437015620608
+    },
+    {
+      "step": 11040,
+      "epoch": 3.989880737260571,
+      "loss": 3.359999500323033,
+      "lr": 0.00033389551459663496
+    },
+    {
+      "step": 11316,
+      "epoch": 4.089627755692085,
+      "loss": 3.0538728150629226,
+      "lr": 0.0003283540135726619
+    },
+    {
+      "step": 11592,
+      "epoch": 4.1893747741236,
+      "loss": 3.119312315747358,
+      "lr": 0.00032281251254868894
+    },
+    {
+      "step": 11868,
+      "epoch": 4.289121792555114,
+      "loss": 3.1355905027493187,
+      "lr": 0.0003172710115247159
+    },
+    {
+      "step": 12144,
+      "epoch": 4.3888688109866285,
+      "loss": 3.1646961578424424,
+      "lr": 0.00031172951050074287
+    },
+    {
+      "step": 12420,
+      "epoch": 4.488615829418142,
+      "loss": 3.1610747705335203,
+      "lr": 0.0003061880094767699
+    },
+    {
+      "step": 12696,
+      "epoch": 4.588362847849656,
+      "loss": 3.171121013769205,
+      "lr": 0.00030064650845279685
+    },
+    {
+      "step": 12972,
+      "epoch": 4.688109866281171,
+      "loss": 3.1861106399176777,
+      "lr": 0.0002951050074288238
+    },
+    {
+      "step": 13248,
+      "epoch": 4.787856884712685,
+      "loss": 3.156759709983632,
+      "lr": 0.00028956350640485084
+    },
+    {
+      "step": 13524,
+      "epoch": 4.8876039031442,
+      "loss": 3.203571018965348,
+      "lr": 0.0002840220053808778
+    },
+    {
+      "step": 13800,
+      "epoch": 4.987350921575714,
+      "loss": 3.2268680252026822,
+      "lr": 0.0002784805043569048
+    },
+    {
+      "step": 14076,
+      "epoch": 5.0870979400072285,
+      "loss": 2.926407911965461,
+      "lr": 0.00027293900333293173
+    },
+    {
+      "step": 14352,
+      "epoch": 5.186844958438742,
+      "loss": 2.8702232241630554,
+      "lr": 0.00026739750230895875
+    },
+    {
+      "step": 14628,
+      "epoch": 5.286591976870256,
+      "loss": 2.884003374023714,
+      "lr": 0.00026185600128498577
+    },
+    {
+      "step": 14904,
+      "epoch": 5.386338995301771,
+      "loss": 2.9157926055832184,
+      "lr": 0.00025631450026101274
+    },
+    {
+      "step": 15180,
+      "epoch": 5.486086013733285,
+      "loss": 2.9195272443087203,
+      "lr": 0.0002507729992370397
+    },
+    {
+      "step": 15456,
+      "epoch": 5.5858330321648,
+      "loss": 2.951574800239093,
+      "lr": 0.0002452314982130667
+    },
+    {
+      "step": 15732,
+      "epoch": 5.685580050596314,
+      "loss": 2.9626765497352765,
+      "lr": 0.00023968999718909368
+    },
+    {
+      "step": 16008,
+      "epoch": 5.785327069027828,
+      "loss": 2.9647246759006944,
+      "lr": 0.00023414849616512068
+    },
+    {
+      "step": 16284,
+      "epoch": 5.885074087459342,
+      "loss": 3.0025289970031683,
+      "lr": 0.00022860699514114767
+    },
+    {
+      "step": 16560,
+      "epoch": 5.984821105890856,
+      "loss": 2.9836030161899068,
+      "lr": 0.00022306549411717463
+    },
+    {
+      "step": 16836,
+      "epoch": 6.084568124322371,
+      "loss": 2.5942284184643345,
+      "lr": 0.00021752399309320162
+    },
+    {
+      "step": 17112,
+      "epoch": 6.184315142753885,
+      "loss": 2.603913979253907,
+      "lr": 0.00021198249206922862
+    },
+    {
+      "step": 17388,
+      "epoch": 6.2840621611854,
+      "loss": 2.6681385649287184,
+      "lr": 0.0002064409910452556
+    },
+    {
+      "step": 17664,
+      "epoch": 6.383809179616914,
+      "loss": 2.668784904739131,
+      "lr": 0.00020089949002128257
+    },
+    {
+      "step": 17940,
+      "epoch": 6.4835561980484275,
+      "loss": 2.7067852931610052,
+      "lr": 0.00019535798899730956
+    },
+    {
+      "step": 18216,
+      "epoch": 6.583303216479942,
+      "loss": 2.7638046776039014,
+      "lr": 0.00018981648797333656
+    },
+    {
+      "step": 18492,
+      "epoch": 6.683050234911456,
+      "loss": 2.7467747417049133,
+      "lr": 0.00018427498694936355
+    },
+    {
+      "step": 18768,
+      "epoch": 6.782797253342971,
+      "loss": 2.7067622227081354,
+      "lr": 0.0001787334859253905
+    },
+    {
+      "step": 19044,
+      "epoch": 6.882544271774485,
+      "loss": 2.7152513848698656,
+      "lr": 0.0001731919849014175
+    },
+    {
+      "step": 19320,
+      "epoch": 6.982291290206,
+      "loss": 2.7338892877965733,
+      "lr": 0.0001676504838774445
+    }
+  ],
+  "evals": [
+    {
+      "step": 2767,
+      "epoch": 1.0,
+      "train_loss": 4.257146280596823,
+      "val_loss": 4.050383091680374,
+      "exact_match": 7.2942289498580895,
+      "f1": 15.68367473685365,
+      "elapsed_min": 2.0134011030197145,
+      "eval_seconds": 8.869090795516968,
+      "forward_seconds": 3.8317012786865234
+    },
+    {
+      "step": 5534,
+      "epoch": 2.0,
+      "train_loss": 3.7598132484003144,
+      "val_loss": 3.9623116527183826,
+      "exact_match": 8.987701040681173,
+      "f1": 17.92725217611894,
+      "elapsed_min": 3.7834255139033,
+      "eval_seconds": 8.446115970611572,
+      "forward_seconds": 3.8585355281829834
+    },
+    {
+      "step": 8301,
+      "epoch": 3.0,
+      "train_loss": 3.5315795251510615,
+      "val_loss": 3.9496871045505966,
+      "exact_match": 10.189214758751183,
+      "f1": 19.55662139504754,
+      "elapsed_min": 5.560483606656392,
+      "eval_seconds": 8.21492886543274,
+      "forward_seconds": 3.8976802825927734
+    },
+    {
+      "step": 11068,
+      "epoch": 4.0,
+      "train_loss": 3.351669403375337,
+      "val_loss": 4.011572483385352,
+      "exact_match": 10.179754020813624,
+      "f1": 19.63226038396631,
+      "elapsed_min": 7.410000876585642,
+      "eval_seconds": 9.78731107711792,
+      "forward_seconds": 3.979253053665161
+    },
+    {
+      "step": 13835,
+      "epoch": 5.0,
+      "train_loss": 3.159533038913105,
+      "val_loss": 4.074978345933229,
+      "exact_match": 10.529801324503312,
+      "f1": 20.094212920419526,
+      "elapsed_min": 9.254221510887145,
+      "eval_seconds": 9.207289934158325,
+      "forward_seconds": 4.276583433151245
+    },
+    {
+      "step": 16602,
+      "epoch": 6.0,
+      "train_loss": 2.9398649553120415,
+      "val_loss": 4.285756450732313,
+      "exact_match": 9.801324503311259,
+      "f1": 19.32930914429034,
+      "elapsed_min": 11.32883407274882,
+      "eval_seconds": 12.387163400650024,
+      "forward_seconds": 4.4482643604278564
+    },
+    {
+      "step": 19369,
+      "epoch": 7.0,
+      "train_loss": 2.695267506743494,
+      "val_loss": 4.48833099883105,
+      "exact_match": 10.009460737937559,
+      "f1": 18.639087492667528,
+      "elapsed_min": 13.395934764544169,
+      "eval_seconds": 11.745777606964111,
+      "forward_seconds": 4.406490087509155
+    }
+  ],
+  "log_lines": [
+    "=== transformer_scratch: 11.11M params | 87,599 questions -> 88,524 inputs | 10 epochs x 2767 steps (batch 32, lr 0.0005) ===",
+    "[transformer_scratch] epoch 1/10 step   276/2767 | train loss 4.8958 | lr 4.99e-05 |   0.2 min, ETA  17.4 min",
+    "[transformer_scratch] epoch 1/10 step   552/2767 | train loss 4.4835 | lr 9.97e-05 |   0.3 min, ETA  16.5 min",
+    "[transformer_scratch] epoch 1/10 step   828/2767 | train loss 4.4001 | lr 1.50e-04 |   0.6 min, ETA  18.8 min",
+    "[transformer_scratch] epoch 1/10 step  1104/2767 | train loss 4.2752 | lr 1.99e-04 |   0.8 min, ETA  19.2 min",
+    "[transformer_scratch] epoch 1/10 step  1380/2767 | train loss 4.2634 | lr 2.49e-04 |   1.0 min, ETA  19.4 min",
+    "[transformer_scratch] epoch 1/10 step  1656/2767 | train loss 4.1453 | lr 2.99e-04 |   1.2 min, ETA  19.2 min",
+    "[transformer_scratch] epoch 1/10 step  1932/2767 | train loss 4.0861 | lr 3.49e-04 |   1.4 min, ETA  18.4 min",
+    "[transformer_scratch] epoch 1/10 step  2208/2767 | train loss 4.0740 | lr 3.99e-04 |   1.5 min, ETA  17.8 min",
+    "[transformer_scratch] epoch 1/10 step  2484/2767 | train loss 3.9995 | lr 4.49e-04 |   1.7 min, ETA  17.3 min",
+    "[transformer_scratch] epoch 1/10 step  2760/2767 | train loss 3.9592 | lr 4.99e-04 |   1.9 min, ETA  16.8 min",
+    "[transformer_scratch] >>> eval @ epoch 1.00: train loss 4.2571 | val loss 4.0504 | EM 7.29 | F1 15.68  (new best)",
+    "[transformer_scratch] epoch 2/10 step   269/2767 | train loss 3.7756 | lr 4.95e-04 |   2.2 min, ETA  16.4 min",
+    "[transformer_scratch] epoch 2/10 step   545/2767 | train loss 3.8110 | lr 4.89e-04 |   2.3 min, ETA  16.1 min",
+    "[transformer_scratch] epoch 2/10 step   821/2767 | train loss 3.7655 | lr 4.84e-04 |   2.5 min, ETA  15.8 min",
+    "[transformer_scratch] epoch 2/10 step  1097/2767 | train loss 3.7825 | lr 4.78e-04 |   2.7 min, ETA  15.5 min",
+    "[transformer_scratch] epoch 2/10 step  1373/2767 | train loss 3.7954 | lr 4.72e-04 |   2.8 min, ETA  15.3 min",
+    "[transformer_scratch] epoch 2/10 step  1649/2767 | train loss 3.7680 | lr 4.67e-04 |   3.0 min, ETA  15.0 min",
+    "[transformer_scratch] epoch 2/10 step  1925/2767 | train loss 3.7516 | lr 4.61e-04 |   3.1 min, ETA  14.7 min",
+    "[transformer_scratch] epoch 2/10 step  2201/2767 | train loss 3.7346 | lr 4.56e-04 |   3.3 min, ETA  14.4 min",
+    "[transformer_scratch] epoch 2/10 step  2477/2767 | train loss 3.7198 | lr 4.50e-04 |   3.5 min, ETA  14.2 min",
+    "[transformer_scratch] epoch 2/10 step  2753/2767 | train loss 3.7015 | lr 4.45e-04 |   3.6 min, ETA  14.0 min",
+    "[transformer_scratch] >>> eval @ epoch 2.00: train loss 3.7598 | val loss 3.9623 | EM 8.99 | F1 17.93  (new best)",
+    "[transformer_scratch] epoch 3/10 step   262/2767 | train loss 3.4771 | lr 4.39e-04 |   3.9 min, ETA  13.8 min",
+    "[transformer_scratch] epoch 3/10 step   538/2767 | train loss 3.5156 | lr 4.34e-04 |   4.1 min, ETA  13.6 min",
+    "[transformer_scratch] epoch 3/10 step   814/2767 | train loss 3.5428 | lr 4.28e-04 |   4.3 min, ETA  13.4 min",
+    "[transformer_scratch] epoch 3/10 step  1090/2767 | train loss 3.5968 | lr 4.23e-04 |   4.4 min, ETA  13.2 min",
+    "[transformer_scratch] epoch 3/10 step  1366/2767 | train loss 3.5606 | lr 4.17e-04 |   4.6 min, ETA  13.0 min",
+    "[transformer_scratch] epoch 3/10 step  1642/2767 | train loss 3.5461 | lr 4.11e-04 |   4.8 min, ETA  12.8 min",
+    "[transformer_scratch] epoch 3/10 step  1918/2767 | train loss 3.4885 | lr 4.06e-04 |   4.9 min, ETA  12.6 min",
+    "[transformer_scratch] epoch 3/10 step  2194/2767 | train loss 3.4985 | lr 4.00e-04 |   5.1 min, ETA  12.4 min",
+    "[transformer_scratch] epoch 3/10 step  2470/2767 | train loss 3.5484 | lr 3.95e-04 |   5.3 min, ETA  12.2 min",
+    "[transformer_scratch] epoch 3/10 step  2746/2767 | train loss 3.5303 | lr 3.89e-04 |   5.4 min, ETA  12.0 min",
+    "[transformer_scratch] >>> eval @ epoch 3.00: train loss 3.5316 | val loss 3.9497 | EM 10.19 | F1 19.56  (new best)",
+    "[transformer_scratch] epoch 4/10 step   255/2767 | train loss 3.3160 | lr 3.84e-04 |   5.7 min, ETA  11.8 min",
+    "[transformer_scratch] epoch 4/10 step   531/2767 | train loss 3.3184 | lr 3.78e-04 |   5.9 min, ETA  11.6 min",
+    "[transformer_scratch] epoch 4/10 step   807/2767 | train loss 3.3674 | lr 3.73e-04 |   6.0 min, ETA  11.5 min",
+    "[transformer_scratch] epoch 4/10 step  1083/2767 | train loss 3.3326 | lr 3.67e-04 |   6.2 min, ETA  11.3 min",
+    "[transformer_scratch] epoch 4/10 step  1359/2767 | train loss 3.3127 | lr 3.62e-04 |   6.4 min, ETA  11.1 min",
+    "[transformer_scratch] epoch 4/10 step  1635/2767 | train loss 3.3597 | lr 3.56e-04 |   6.5 min, ETA  10.9 min",
+    "[transformer_scratch] epoch 4/10 step  1911/2767 | train loss 3.3890 | lr 3.51e-04 |   6.7 min, ETA  10.7 min",
+    "[transformer_scratch] epoch 4/10 step  2187/2767 | train loss 3.3556 | lr 3.45e-04 |   6.9 min, ETA  10.6 min",
+    "[transformer_scratch] epoch 4/10 step  2463/2767 | train loss 3.4021 | lr 3.39e-04 |   7.1 min, ETA  10.4 min",
+    "[transformer_scratch] epoch 4/10 step  2739/2767 | train loss 3.3600 | lr 3.34e-04 |   7.2 min, ETA  10.2 min",
+    "[transformer_scratch] >>> eval @ epoch 4.00: train loss 3.3517 | val loss 4.0116 | EM 10.18 | F1 19.63  (new best)",
+    "[transformer_scratch] epoch 5/10 step   248/2767 | train loss 3.0539 | lr 3.28e-04 |   7.6 min, ETA  10.1 min",
+    "[transformer_scratch] epoch 5/10 step   524/2767 | train loss 3.1193 | lr 3.23e-04 |   7.7 min, ETA   9.9 min",
+    "[transformer_scratch] epoch 5/10 step   800/2767 | train loss 3.1356 | lr 3.17e-04 |   7.9 min, ETA   9.7 min",
+    "[transformer_scratch] epoch 5/10 step  1076/2767 | train loss 3.1647 | lr 3.12e-04 |   8.1 min, ETA   9.6 min",
+    "[transformer_scratch] epoch 5/10 step  1352/2767 | train loss 3.1611 | lr 3.06e-04 |   8.2 min, ETA   9.4 min",
+    "[transformer_scratch] epoch 5/10 step  1628/2767 | train loss 3.1711 | lr 3.01e-04 |   8.4 min, ETA   9.2 min",
+    "[transformer_scratch] epoch 5/10 step  1904/2767 | train loss 3.1861 | lr 2.95e-04 |   8.6 min, ETA   9.0 min",
+    "[transformer_scratch] epoch 5/10 step  2180/2767 | train loss 3.1568 | lr 2.90e-04 |   8.7 min, ETA   8.8 min",
+    "[transformer_scratch] epoch 5/10 step  2456/2767 | train loss 3.2036 | lr 2.84e-04 |   8.9 min, ETA   8.7 min",
+    "[transformer_scratch] epoch 5/10 step  2732/2767 | train loss 3.2269 | lr 2.78e-04 |   9.1 min, ETA   8.5 min",
+    "[transformer_scratch] >>> eval @ epoch 5.00: train loss 3.1595 | val loss 4.0750 | EM 10.53 | F1 20.09  (new best)",
+    "[transformer_scratch] epoch 6/10 step   241/2767 | train loss 2.9264 | lr 2.73e-04 |   9.4 min, ETA   8.4 min",
+    "[transformer_scratch] epoch 6/10 step   517/2767 | train loss 2.8702 | lr 2.67e-04 |   9.6 min, ETA   8.2 min",
+    "[transformer_scratch] epoch 6/10 step   793/2767 | train loss 2.8840 | lr 2.62e-04 |   9.8 min, ETA   8.1 min",
+    "[transformer_scratch] epoch 6/10 step  1069/2767 | train loss 2.9158 | lr 2.56e-04 |  10.0 min, ETA   7.9 min",
+    "[transformer_scratch] epoch 6/10 step  1345/2767 | train loss 2.9195 | lr 2.51e-04 |  10.2 min, ETA   7.7 min",
+    "[transformer_scratch] epoch 6/10 step  1621/2767 | train loss 2.9516 | lr 2.45e-04 |  10.3 min, ETA   7.6 min",
+    "[transformer_scratch] epoch 6/10 step  1897/2767 | train loss 2.9627 | lr 2.40e-04 |  10.5 min, ETA   7.4 min",
+    "[transformer_scratch] epoch 6/10 step  2173/2767 | train loss 2.9647 | lr 2.34e-04 |  10.7 min, ETA   7.3 min",
+    "[transformer_scratch] epoch 6/10 step  2449/2767 | train loss 3.0025 | lr 2.29e-04 |  10.9 min, ETA   7.1 min",
+    "[transformer_scratch] epoch 6/10 step  2725/2767 | train loss 2.9836 | lr 2.23e-04 |  11.1 min, ETA   6.9 min",
+    "[transformer_scratch] >>> eval @ epoch 6.00: train loss 2.9399 | val loss 4.2858 | EM 9.80 | F1 19.33",
+    "[transformer_scratch] epoch 7/10 step   234/2767 | train loss 2.5942 | lr 2.18e-04 |  11.5 min, ETA   6.8 min",
+    "[transformer_scratch] epoch 7/10 step   510/2767 | train loss 2.6039 | lr 2.12e-04 |  11.7 min, ETA   6.6 min",
+    "[transformer_scratch] epoch 7/10 step   786/2767 | train loss 2.6681 | lr 2.06e-04 |  11.9 min, ETA   6.5 min",
+    "[transformer_scratch] epoch 7/10 step  1062/2767 | train loss 2.6688 | lr 2.01e-04 |  12.0 min, ETA   6.3 min",
+    "[transformer_scratch] epoch 7/10 step  1338/2767 | train loss 2.7068 | lr 1.95e-04 |  12.2 min, ETA   6.1 min",
+    "[transformer_scratch] epoch 7/10 step  1614/2767 | train loss 2.7638 | lr 1.90e-04 |  12.4 min, ETA   6.0 min",
+    "[transformer_scratch] epoch 7/10 step  1890/2767 | train loss 2.7468 | lr 1.84e-04 |  12.6 min, ETA   5.8 min",
+    "[transformer_scratch] epoch 7/10 step  2166/2767 | train loss 2.7068 | lr 1.79e-04 |  12.8 min, ETA   5.6 min",
+    "[transformer_scratch] epoch 7/10 step  2442/2767 | train loss 2.7153 | lr 1.73e-04 |  13.0 min, ETA   5.5 min",
+    "[transformer_scratch] epoch 7/10 step  2718/2767 | train loss 2.7339 | lr 1.68e-04 |  13.2 min, ETA   5.3 min",
+    "[transformer_scratch] >>> eval @ epoch 7.00: train loss 2.6953 | val loss 4.4883 | EM 10.01 | F1 18.64",
+    "[transformer_scratch] early stopping: no F1 improvement for 2 evaluations",
+    "[transformer_scratch] done: 13.4 min (12.3 min training, 1.1 min validation) | best F1 20.09 | peak GPU memory 1.32 GB"
+  ],
+  "n_params": 11105794,
+  "n_train_examples": 87599,
+  "n_train_features": 88524,
+  "steps_per_epoch": 2767,
+  "n_val_features": 10784,
+  "best": {
+    "step": 13835,
+    "epoch": 5.0,
+    "train_loss": 3.159533038913105,
+    "val_loss": 4.074978345933229,
+    "exact_match": 10.529801324503312,
+    "f1": 20.094212920419526,
+    "elapsed_min": 9.254221510887145,
+    "eval_seconds": 9.207289934158325,
+    "forward_seconds": 4.276583433151245
+  },
+  "train_time_min": 13.396039776007335,
+  "pure_train_time_min": 12.251745148499808,
+  "epochs_run": 7.0,
+  "peak_gpu_mem_gb": 1.3204379081726074,
+  "model_size_mb": 44.450293
+}

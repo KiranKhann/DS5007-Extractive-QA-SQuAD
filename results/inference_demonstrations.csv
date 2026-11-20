@@ -1,0 +1,8 @@
+case,question,expected,predicted answer (best model),start/end char,start/end token,answer tokens,window,confidence,EM,F1,A3 (windows) answer,A3 (windows) window,A3 (windows) confidence
+1. Simple factual question (from the brief),In which year did Alan Turing introduce the Turing machine?,1936,1936,"[115, 119)",32 / 32,1936,1 of 1,0.996,1.0,1.0,1936,1 of 1,0.997
+2. Answer near the beginning (name),Who was the first woman to win a Nobel Prize?,Marie Curie,Marie Curie,"[0, 11)",13 / 15,marie cu ##rie,1 of 1,1.0,1.0,1.0,Marie Curie,1 of 1,0.999
+3. Answer near the end,Into which ocean does the Amazon river empty?,Atlantic Ocean,Atlantic Ocean,"[352, 366)",83 / 84,atlantic ocean,1 of 1,0.712,1.0,1.0,Atlantic Ocean,1 of 1,0.724
+4. Number among several numbers,What percentage of the rainforest is in Peru?,13%,13%,"[177, 180)",45 / 46,13 %,1 of 1,0.51,1.0,1.0,13%,1 of 1,0.943
+5. Long paragraph – answer beyond the first 384-token window (validation example),What website are teachers using to sell their lesson plans?,TeachersPayTeachers.com,Merit pay systems,"[1785, 1802)",353 / 355,merit pay systems,1 of 1,0.037,0.0,0.0,TeachersPayTeachers.com,2 of 2,0.77
+6. Hard case – answer requires arithmetic (not a span),How many years after its founding did the company move to Mountain View?,5,2003,"[95, 99)",34 / 34,2003,1 of 1,0.609,0.0,0.0,2003,1 of 1,0.694
+7. Hard case – the question is not answerable from the text,Where was Alan Turing born?,(not in the text),British,"[18, 25)",12 / 12,british,1 of 1,0.996,0.0,0.0,British,1 of 1,0.979

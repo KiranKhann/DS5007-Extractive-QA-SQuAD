@@ -1,0 +1,5 @@
+,questions,EM A2 (truncation),EM A3 (windows),F1 A2 (truncation),F1 A3 (windows)
+all questions,10570.0,78.06,77.69,85.89,85.67
+context fits into 384 tokens,10387.0,78.21,77.67,86.05,85.65
+context longer than 384 tokens,183.0,69.4,78.69,76.26,86.93
+answer beyond the truncation point,32.0,6.25,68.75,14.93,83.64

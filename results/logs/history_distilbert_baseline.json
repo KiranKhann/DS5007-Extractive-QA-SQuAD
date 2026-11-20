@@ -1,0 +1,236 @@
+{
+  "run_name": "distilbert_baseline",
+  "config": {
+    "arch": "pretrained",
+    "encoder": "distilbert-base-uncased",
+    "input_strategy": "truncation",
+    "max_length": 384,
+    "doc_stride": null,
+    "lr": 5e-05,
+    "batch_size": 16,
+    "epochs": 2,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "evals_per_epoch": 2,
+    "patience": 2,
+    "train_fraction": 1.0
+  },
+  "train_log": [
+    {
+      "step": 547,
+      "epoch": 0.09990867579908676,
+      "loss": 3.6413694835886004,
+      "lr": 2.497716894977169e-05
+    },
+    {
+      "step": 1094,
+      "epoch": 0.19981735159817351,
+      "loss": 1.8271847182043728,
+      "lr": 4.995433789954338e-05
+    },
+    {
+      "step": 1641,
+      "epoch": 0.2997260273972603,
+      "loss": 1.5112431448164108,
+      "lr": 4.7229832572298326e-05
+    },
+    {
+      "step": 2188,
+      "epoch": 0.39963470319634703,
+      "loss": 1.3984585546597266,
+      "lr": 4.445459157787925e-05
+    },
+    {
+      "step": 2735,
+      "epoch": 0.4995433789954338,
+      "loss": 1.3728429056172833,
+      "lr": 4.1679350583460176e-05
+    },
+    {
+      "step": 3282,
+      "epoch": 0.5994520547945206,
+      "loss": 1.2764073334620682,
+      "lr": 3.89041095890411e-05
+    },
+    {
+      "step": 3829,
+      "epoch": 0.6993607305936073,
+      "loss": 1.285611389378525,
+      "lr": 3.6128868594622026e-05
+    },
+    {
+      "step": 4376,
+      "epoch": 0.7992694063926941,
+      "loss": 1.231061766853716,
+      "lr": 3.3353627600202944e-05
+    },
+    {
+      "step": 4923,
+      "epoch": 0.8991780821917809,
+      "loss": 1.1779311560298669,
+      "lr": 3.057838660578386e-05
+    },
+    {
+      "step": 5470,
+      "epoch": 0.9990867579908675,
+      "loss": 1.1597961276170323,
+      "lr": 2.7803145611364788e-05
+    },
+    {
+      "step": 6017,
+      "epoch": 1.0989954337899543,
+      "loss": 0.8543170132155348,
+      "lr": 2.5027904616945713e-05
+    },
+    {
+      "step": 6564,
+      "epoch": 1.1989041095890411,
+      "loss": 0.8720561792525774,
+      "lr": 2.2252663622526638e-05
+    },
+    {
+      "step": 7111,
+      "epoch": 1.298812785388128,
+      "loss": 0.8426199157397097,
+      "lr": 1.9477422628107563e-05
+    },
+    {
+      "step": 7658,
+      "epoch": 1.3987214611872145,
+      "loss": 0.8432354633943254,
+      "lr": 1.6702181633688484e-05
+    },
+    {
+      "step": 8205,
+      "epoch": 1.4986301369863013,
+      "loss": 0.8161802758518912,
+      "lr": 1.3926940639269406e-05
+    },
+    {
+      "step": 8752,
+      "epoch": 1.5985388127853881,
+      "loss": 0.849841490851024,
+      "lr": 1.115169964485033e-05
+    },
+    {
+      "step": 9299,
+      "epoch": 1.698447488584475,
+      "loss": 0.8161944879910192,
+      "lr": 8.376458650431254e-06
+    },
+    {
+      "step": 9846,
+      "epoch": 1.7983561643835617,
+      "loss": 0.7974246244543867,
+      "lr": 5.6012176560121765e-06
+    },
+    {
+      "step": 10393,
+      "epoch": 1.8982648401826483,
+      "loss": 0.7941653004403089,
+      "lr": 2.8259766615931e-06
+    },
+    {
+      "step": 10940,
+      "epoch": 1.998173515981735,
+      "loss": 0.7780529115165173,
+      "lr": 5.073566717402334e-08
+    }
+  ],
+  "evals": [
+    {
+      "step": 2738,
+      "epoch": 0.5000913242009133,
+      "train_loss": 1.9504841325207294,
+      "val_loss": 1.2782005666445875,
+      "exact_match": 71.07852412488174,
+      "f1": 80.57314347845227,
+      "elapsed_min": 4.77229779958725,
+      "eval_seconds": 17.20639204978943,
+      "forward_seconds": 13.56915807723999
+    },
+    {
+      "step": 5475,
+      "epoch": 1.0,
+      "train_loss": 1.224946342934036,
+      "val_loss": 1.1200224401822265,
+      "exact_match": 75.54399243140965,
+      "f1": 83.71479005728658,
+      "elapsed_min": 9.632726049423217,
+      "eval_seconds": 17.70434308052063,
+      "forward_seconds": 14.289209127426147
+    },
+    {
+      "step": 8213,
+      "epoch": 1.5000913242009133,
+      "train_loss": 0.8454826658250121,
+      "val_loss": 1.11177638855991,
+      "exact_match": 77.05771050141911,
+      "f1": 85.19314413587075,
+      "elapsed_min": 14.620057149728138,
+      "eval_seconds": 18.114601850509644,
+      "forward_seconds": 14.459094762802124
+    },
+    {
+      "step": 10950,
+      "epoch": 2.0,
+      "train_loss": 0.8071311809500944,
+      "val_loss": 1.0949348976393296,
+      "exact_match": 78.06054872280038,
+      "f1": 85.88521824229029,
+      "elapsed_min": 19.699061314264934,
+      "eval_seconds": 18.285755157470703,
+      "forward_seconds": 14.652104139328003
+    }
+  ],
+  "log_lines": [
+    "=== distilbert_baseline: 66.36M params | 87,599 questions -> 87,599 inputs | 2 epochs x 5475 steps (batch 16, lr 5e-05) ===",
+    "[distilbert_baseline] epoch 1/2 step   547/5475 | train loss 3.6414 | lr 2.50e-05 |   0.9 min, ETA  17.0 min",
+    "[distilbert_baseline] epoch 1/2 step  1094/5475 | train loss 1.8272 | lr 5.00e-05 |   1.8 min, ETA  16.1 min",
+    "[distilbert_baseline] epoch 1/2 step  1641/5475 | train loss 1.5112 | lr 4.72e-05 |   2.7 min, ETA  15.2 min",
+    "[distilbert_baseline] epoch 1/2 step  2188/5475 | train loss 1.3985 | lr 4.45e-05 |   3.6 min, ETA  14.3 min",
+    "[distilbert_baseline] epoch 1/2 step  2735/5475 | train loss 1.3728 | lr 4.17e-05 |   4.5 min, ETA  13.5 min",
+    "[distilbert_baseline] >>> eval @ epoch 0.50: train loss 1.9505 | val loss 1.2782 | EM 71.08 | F1 80.57  (new best)",
+    "[distilbert_baseline] epoch 1/2 step  3282/5475 | train loss 1.2764 | lr 3.89e-05 |   5.7 min, ETA  12.6 min",
+    "[distilbert_baseline] epoch 1/2 step  3829/5475 | train loss 1.2856 | lr 3.61e-05 |   6.6 min, ETA  11.7 min",
+    "[distilbert_baseline] epoch 1/2 step  4376/5475 | train loss 1.2311 | lr 3.34e-05 |   7.5 min, ETA  10.8 min",
+    "[distilbert_baseline] epoch 1/2 step  4923/5475 | train loss 1.1779 | lr 3.06e-05 |   8.4 min, ETA   9.9 min",
+    "[distilbert_baseline] epoch 1/2 step  5470/5475 | train loss 1.1598 | lr 2.78e-05 |   9.3 min, ETA   9.1 min",
+    "[distilbert_baseline] >>> eval @ epoch 1.00: train loss 1.2249 | val loss 1.1200 | EM 75.54 | F1 83.71  (new best)",
+    "[distilbert_baseline] epoch 2/2 step   542/5475 | train loss 0.8543 | lr 2.50e-05 |  10.5 min, ETA   8.2 min",
+    "[distilbert_baseline] epoch 2/2 step  1089/5475 | train loss 0.8721 | lr 2.23e-05 |  11.5 min, ETA   7.3 min",
+    "[distilbert_baseline] epoch 2/2 step  1636/5475 | train loss 0.8426 | lr 1.95e-05 |  12.4 min, ETA   6.4 min",
+    "[distilbert_baseline] epoch 2/2 step  2183/5475 | train loss 0.8432 | lr 1.67e-05 |  13.4 min, ETA   5.5 min",
+    "[distilbert_baseline] epoch 2/2 step  2730/5475 | train loss 0.8162 | lr 1.39e-05 |  14.3 min, ETA   4.6 min",
+    "[distilbert_baseline] >>> eval @ epoch 1.50: train loss 0.8455 | val loss 1.1118 | EM 77.06 | F1 85.19  (new best)",
+    "[distilbert_baseline] epoch 2/2 step  3277/5475 | train loss 0.8498 | lr 1.12e-05 |  15.6 min, ETA   3.7 min",
+    "[distilbert_baseline] epoch 2/2 step  3824/5475 | train loss 0.8162 | lr 8.38e-06 |  16.5 min, ETA   2.8 min",
+    "[distilbert_baseline] epoch 2/2 step  4371/5475 | train loss 0.7974 | lr 5.60e-06 |  17.5 min, ETA   1.9 min",
+    "[distilbert_baseline] epoch 2/2 step  4918/5475 | train loss 0.7942 | lr 2.83e-06 |  18.4 min, ETA   0.9 min",
+    "[distilbert_baseline] epoch 2/2 step  5465/5475 | train loss 0.7781 | lr 5.07e-08 |  19.4 min, ETA   0.0 min",
+    "[distilbert_baseline] >>> eval @ epoch 2.00: train loss 0.8071 | val loss 1.0949 | EM 78.06 | F1 85.89  (new best)",
+    "[distilbert_baseline] done: 19.7 min (18.5 min training, 1.2 min validation) | best F1 85.89 | peak GPU memory 2.33 GB"
+  ],
+  "n_params": 66364418,
+  "n_train_examples": 87599,
+  "n_train_features": 87599,
+  "steps_per_epoch": 5475,
+  "n_val_features": 10570,
+  "best": {
+    "step": 10950,
+    "epoch": 2.0,
+    "train_loss": 0.8071311809500944,
+    "val_loss": 1.0949348976393296,
+    "exact_match": 78.06054872280038,
+    "f1": 85.88521824229029,
+    "elapsed_min": 19.699061314264934,
+    "eval_seconds": 18.285755157470703,
+    "forward_seconds": 14.652104139328003
+  },
+  "train_time_min": 19.705077159404755,
+  "pure_train_time_min": 18.516558957099914,
+  "epochs_run": 2.0,
+  "peak_gpu_mem_gb": 2.3344383239746094,
+  "model_size_mb": 265.499385
+}

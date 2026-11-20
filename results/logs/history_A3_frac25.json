@@ -1,0 +1,212 @@
+{
+  "run_name": "A3_frac25",
+  "config": {
+    "arch": "pretrained",
+    "encoder": "distilbert-base-uncased",
+    "input_strategy": "sliding_window",
+    "max_length": 384,
+    "doc_stride": 128,
+    "lr": 5e-05,
+    "batch_size": 16,
+    "epochs": 2,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "evals_per_epoch": 1,
+    "patience": 2,
+    "train_fraction": 0.25
+  },
+  "train_log": [
+    {
+      "step": 138,
+      "epoch": 0.09985528219971057,
+      "loss": 4.447584539219953,
+      "lr": 2.5e-05
+    },
+    {
+      "step": 276,
+      "epoch": 0.19971056439942114,
+      "loss": 2.9319077367367954,
+      "lr": 5e-05
+    },
+    {
+      "step": 414,
+      "epoch": 0.2995658465991317,
+      "loss": 2.198099271974702,
+      "lr": 4.72266881028939e-05
+    },
+    {
+      "step": 552,
+      "epoch": 0.3994211287988423,
+      "loss": 1.8877539021381433,
+      "lr": 4.4453376205787784e-05
+    },
+    {
+      "step": 690,
+      "epoch": 0.4992764109985528,
+      "loss": 1.7659683283688365,
+      "lr": 4.168006430868168e-05
+    },
+    {
+      "step": 828,
+      "epoch": 0.5991316931982634,
+      "loss": 1.701806945645291,
+      "lr": 3.8906752411575566e-05
+    },
+    {
+      "step": 966,
+      "epoch": 0.6989869753979739,
+      "loss": 1.548250140055366,
+      "lr": 3.613344051446946e-05
+    },
+    {
+      "step": 1104,
+      "epoch": 0.7988422575976846,
+      "loss": 1.4464266244052113,
+      "lr": 3.336012861736335e-05
+    },
+    {
+      "step": 1242,
+      "epoch": 0.8986975397973951,
+      "loss": 1.5088652739490287,
+      "lr": 3.058681672025724e-05
+    },
+    {
+      "step": 1380,
+      "epoch": 0.9985528219971056,
+      "loss": 1.4522176263988882,
+      "lr": 2.7813504823151126e-05
+    },
+    {
+      "step": 1518,
+      "epoch": 1.0984081041968161,
+      "loss": 1.0328632542753922,
+      "lr": 2.504019292604502e-05
+    },
+    {
+      "step": 1656,
+      "epoch": 1.1982633863965269,
+      "loss": 1.0264353078344595,
+      "lr": 2.2266881028938908e-05
+    },
+    {
+      "step": 1794,
+      "epoch": 1.2981186685962374,
+      "loss": 0.967257724939913,
+      "lr": 1.94935691318328e-05
+    },
+    {
+      "step": 1932,
+      "epoch": 1.3979739507959479,
+      "loss": 1.0067196596359862,
+      "lr": 1.672025723472669e-05
+    },
+    {
+      "step": 2070,
+      "epoch": 1.4978292329956584,
+      "loss": 1.0111897667680962,
+      "lr": 1.3946945337620579e-05
+    },
+    {
+      "step": 2208,
+      "epoch": 1.5976845151953691,
+      "loss": 0.96436507244041,
+      "lr": 1.117363344051447e-05
+    },
+    {
+      "step": 2346,
+      "epoch": 1.6975397973950797,
+      "loss": 0.926089311423509,
+      "lr": 8.40032154340836e-06
+    },
+    {
+      "step": 2484,
+      "epoch": 1.7973950795947902,
+      "loss": 0.9661898353825444,
+      "lr": 5.627009646302251e-06
+    },
+    {
+      "step": 2622,
+      "epoch": 1.8972503617945007,
+      "loss": 0.9259475116496501,
+      "lr": 2.8536977491961416e-06
+    },
+    {
+      "step": 2760,
+      "epoch": 1.9971056439942112,
+      "loss": 1.0263690633186395,
+      "lr": 8.038585209003216e-08
+    }
+  ],
+  "evals": [
+    {
+      "step": 1382,
+      "epoch": 1.0,
+      "train_loss": 2.0876722560518903,
+      "val_loss": 1.3855548775160702,
+      "exact_match": 68.00378429517502,
+      "f1": 78.03091740587372,
+      "elapsed_min": 6.98363230228424,
+      "eval_seconds": 41.089696168899536,
+      "forward_seconds": 36.98554563522339
+    },
+    {
+      "step": 2764,
+      "epoch": 2.0,
+      "train_loss": 0.9849337633435012,
+      "val_loss": 1.3284989885477354,
+      "exact_match": 70.54872280037843,
+      "f1": 80.10090328050146,
+      "elapsed_min": 13.751487747828167,
+      "eval_seconds": 40.654494524002075,
+      "forward_seconds": 36.60360097885132
+    }
+  ],
+  "log_lines": [
+    "=== A3_frac25: 66.36M params | 21,900 questions -> 22,112 inputs | 2 epochs x 1382 steps (batch 16, lr 5e-05) ===",
+    "[A3_frac25] epoch 1/2 step   138/1382 | train loss 4.4476 | lr 2.50e-05 |   0.6 min, ETA  11.6 min",
+    "[A3_frac25] epoch 1/2 step   276/1382 | train loss 2.9319 | lr 5.00e-05 |   1.3 min, ETA  11.3 min",
+    "[A3_frac25] epoch 1/2 step   414/1382 | train loss 2.1981 | lr 4.72e-05 |   1.9 min, ETA  10.7 min",
+    "[A3_frac25] epoch 1/2 step   552/1382 | train loss 1.8878 | lr 4.45e-05 |   2.5 min, ETA  10.1 min",
+    "[A3_frac25] epoch 1/2 step   690/1382 | train loss 1.7660 | lr 4.17e-05 |   3.2 min, ETA   9.5 min",
+    "[A3_frac25] epoch 1/2 step   828/1382 | train loss 1.7018 | lr 3.89e-05 |   3.8 min, ETA   8.9 min",
+    "[A3_frac25] epoch 1/2 step   966/1382 | train loss 1.5483 | lr 3.61e-05 |   4.4 min, ETA   8.2 min",
+    "[A3_frac25] epoch 1/2 step  1104/1382 | train loss 1.4464 | lr 3.34e-05 |   5.0 min, ETA   7.6 min",
+    "[A3_frac25] epoch 1/2 step  1242/1382 | train loss 1.5089 | lr 3.06e-05 |   5.7 min, ETA   6.9 min",
+    "[A3_frac25] epoch 1/2 step  1380/1382 | train loss 1.4522 | lr 2.78e-05 |   6.3 min, ETA   6.3 min",
+    "[A3_frac25] >>> eval @ epoch 1.00: train loss 2.0877 | val loss 1.3856 | EM 68.00 | F1 78.03  (new best)",
+    "[A3_frac25] epoch 2/2 step   136/1382 | train loss 1.0329 | lr 2.50e-05 |   7.6 min, ETA   5.7 min",
+    "[A3_frac25] epoch 2/2 step   274/1382 | train loss 1.0264 | lr 2.23e-05 |   8.2 min, ETA   5.1 min",
+    "[A3_frac25] epoch 2/2 step   412/1382 | train loss 0.9673 | lr 1.95e-05 |   8.9 min, ETA   4.4 min",
+    "[A3_frac25] epoch 2/2 step   550/1382 | train loss 1.0067 | lr 1.67e-05 |   9.5 min, ETA   3.8 min",
+    "[A3_frac25] epoch 2/2 step   688/1382 | train loss 1.0112 | lr 1.39e-05 |  10.1 min, ETA   3.2 min",
+    "[A3_frac25] epoch 2/2 step   826/1382 | train loss 0.9644 | lr 1.12e-05 |  10.8 min, ETA   2.5 min",
+    "[A3_frac25] epoch 2/2 step   964/1382 | train loss 0.9261 | lr 8.40e-06 |  11.4 min, ETA   1.9 min",
+    "[A3_frac25] epoch 2/2 step  1102/1382 | train loss 0.9662 | lr 5.63e-06 |  11.8 min, ETA   1.3 min",
+    "[A3_frac25] epoch 2/2 step  1240/1382 | train loss 0.9259 | lr 2.85e-06 |  12.4 min, ETA   0.6 min",
+    "[A3_frac25] epoch 2/2 step  1378/1382 | train loss 1.0264 | lr 8.04e-08 |  13.1 min, ETA   0.0 min",
+    "[A3_frac25] >>> eval @ epoch 2.00: train loss 0.9849 | val loss 1.3285 | EM 70.55 | F1 80.10  (new best)",
+    "[A3_frac25] done: 13.8 min (12.4 min training, 1.4 min validation) | best F1 80.10 | peak GPU memory 2.09 GB"
+  ],
+  "n_params": 66364418,
+  "n_train_examples": 21900,
+  "n_train_features": 22112,
+  "steps_per_epoch": 1382,
+  "n_val_features": 10784,
+  "best": {
+    "step": 2764,
+    "epoch": 2.0,
+    "train_loss": 0.9849337633435012,
+    "val_loss": 1.3284989885477354,
+    "exact_match": 70.54872280037843,
+    "f1": 80.10090328050146,
+    "elapsed_min": 13.751487747828167,
+    "eval_seconds": 40.654494524002075,
+    "forward_seconds": 36.60360097885132
+  },
+  "train_time_min": 13.751509396235148,
+  "pure_train_time_min": 12.389106218020121,
+  "epochs_run": 2.0,
+  "peak_gpu_mem_gb": 2.0855135917663574,
+  "model_size_mb": 265.457672
+}

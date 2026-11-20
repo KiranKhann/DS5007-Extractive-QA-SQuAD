@@ -1,0 +1,60 @@
+{
+  "data_source": "huggingface_hub: rajpurkar/squad (plain_text parquet)",
+  "train_examples": 87599,
+  "validation_examples": 10570,
+  "train_unique_contexts": 18891,
+  "validation_unique_contexts": 2067,
+  "train_articles": 442,
+  "validation_articles": 48,
+  "offset_status_train": {
+    "ok": 87599
+  },
+  "means_train": {
+    "context_words": 119.76,
+    "context_tokens": 155.75,
+    "question_words": 10.06,
+    "question_tokens": 12.29,
+    "answer_words": 3.16
+  },
+  "means_validation": {
+    "context_words": 123.95,
+    "context_tokens": 161.0,
+    "question_words": 10.22,
+    "question_tokens": 12.57,
+    "answer_words": 3.02
+  },
+  "answer_words_median": 2.0,
+  "pct_answers_first_half_train": 59.40935398805922,
+  "pct_pairs_longer_than": {
+    "128": {
+      "train": 75.84,
+      "validation": 78.63
+    },
+    "256": {
+      "train": 9.63,
+      "validation": 11.1
+    },
+    "384": {
+      "train": 1.02,
+      "validation": 1.73
+    },
+    "512": {
+      "train": 0.13,
+      "validation": 0.53
+    }
+  },
+  "validation_ref_answers_mean": 3.285335856196783,
+  "validation_pct_questions_with_disagreement": 44.03973509933775,
+  "question_types_train_pct": {
+    "what": 57.59,
+    "who": 10.77,
+    "which": 6.94,
+    "when": 6.49,
+    "how many": 5.82,
+    "where": 4.24,
+    "how": 3.65,
+    "other": 1.81,
+    "why": 1.4,
+    "how much": 1.28
+  }
+}

@@ -1,0 +1,30 @@
+=== bert_base: 109.5M params | 87,599 examples -> 88,524 windows | 2 epochs x 5533 steps (batch 16, lr 3e-05) ===
+[bert_base] epoch 1/2 step   276/5533 | train loss 4.5655 | lr 7.49e-06 |   0.8 min elapsed, ETA  31.7 min
+[bert_base] epoch 1/2 step   552/5533 | train loss 2.5728 | lr 1.50e-05 |   1.6 min elapsed, ETA  31.2 min
+[bert_base] epoch 1/2 step   828/5533 | train loss 1.7826 | lr 2.25e-05 |   2.5 min elapsed, ETA  30.6 min
+[bert_base] epoch 1/2 step  1104/5533 | train loss 1.5210 | lr 2.99e-05 |   3.3 min elapsed, ETA  30.0 min
+[bert_base] epoch 1/2 step  1380/5533 | train loss 1.4650 | lr 2.92e-05 |   4.2 min elapsed, ETA  29.2 min
+[bert_base] epoch 1/2 step  1656/5533 | train loss 1.3807 | lr 2.83e-05 |   5.0 min elapsed, ETA  28.5 min
+[bert_base] epoch 1/2 step  1932/5533 | train loss 1.2988 | lr 2.75e-05 |   5.8 min elapsed, ETA  27.6 min
+[bert_base] epoch 1/2 step  2208/5533 | train loss 1.2565 | lr 2.67e-05 |   6.7 min elapsed, ETA  26.8 min
+[bert_base] epoch 1/2 step  2484/5533 | train loss 1.2474 | lr 2.58e-05 |   7.5 min elapsed, ETA  26.0 min
+[bert_base] epoch 1/2 step  2760/5533 | train loss 1.1952 | lr 2.50e-05 |   8.3 min elapsed, ETA  25.1 min
+[bert_base] >>> eval @ epoch 0.50: train loss 1.8267 | val loss 1.1812 | EM 75.15 | F1 83.79  (new best)
+[bert_base] epoch 1/2 step  3036/5533 | train loss 1.1983 | lr 2.42e-05 |   9.7 min elapsed, ETA  25.7 min
+[bert_base] epoch 1/2 step  3312/5533 | train loss 1.1765 | lr 2.34e-05 |  10.5 min elapsed, ETA  24.7 min
+[bert_base] epoch 1/2 step  3588/5533 | train loss 1.1053 | lr 2.25e-05 |  11.4 min elapsed, ETA  23.7 min
+[bert_base] epoch 1/2 step  3864/5533 | train loss 1.1363 | lr 2.17e-05 |  12.2 min elapsed, ETA  22.7 min
+[bert_base] epoch 1/2 step  4140/5533 | train loss 1.1318 | lr 2.09e-05 |  13.1 min elapsed, ETA  21.8 min
+[bert_base] epoch 1/2 step  4416/5533 | train loss 1.0667 | lr 2.00e-05 |  13.9 min elapsed, ETA  21.0 min
+[bert_base] epoch 1/2 step  4692/5533 | train loss 1.0463 | lr 1.92e-05 |  15.1 min elapsed, ETA  20.5 min
+[bert_base] epoch 1/2 step  4968/5533 | train loss 1.0747 | lr 1.84e-05 |  16.3 min elapsed, ETA  20.0 min
+[bert_base] epoch 1/2 step  5244/5533 | train loss 1.0611 | lr 1.75e-05 |  17.4 min elapsed, ETA  19.3 min
+[bert_base] epoch 1/2 step  5520/5533 | train loss 1.0343 | lr 1.67e-05 |  18.5 min elapsed, ETA  18.5 min
+[bert_base] >>> eval @ epoch 1.00: train loss 1.1022 | val loss 1.0482 | EM 79.97 | F1 87.35  (new best)
+[bert_base] epoch 2/2 step   263/5533 | train loss 0.7935 | lr 1.59e-05 |  20.3 min elapsed, ETA  18.5 min
+[bert_base] epoch 2/2 step   539/5533 | train loss 0.8103 | lr 1.50e-05 |  21.4 min elapsed, ETA  17.6 min
+[bert_base] epoch 2/2 step   815/5533 | train loss 0.7871 | lr 1.42e-05 |  22.5 min elapsed, ETA  16.7 min
+[bert_base] epoch 2/2 step  1091/5533 | train loss 0.7826 | lr 1.34e-05 |  23.5 min elapsed, ETA  15.8 min
+[bert_base] epoch 2/2 step  1367/5533 | train loss 0.7690 | lr 1.25e-05 |  24.6 min elapsed, ETA  14.8 min
+[bert_base] epoch 2/2 step  1643/5533 | train loss 0.7675 | lr 1.17e-05 |  25.6 min elapsed, ETA  13.9 min
+[bert_base] epoch 2/2 step  1919/5533 | train loss 0.8009 | lr 1.09e-05 |  26.6 min elapsed, ETA  12.9 min

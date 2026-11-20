@@ -1,0 +1,7 @@
+max_length,input strategy,oracle EM,oracle F1
+128,sliding windows,99.7,99.76
+128,truncation,79.49,79.91
+256,sliding windows,99.7,99.76
+256,truncation,98.22,98.3
+384,sliding windows,99.7,99.78
+384,truncation,99.39,99.48

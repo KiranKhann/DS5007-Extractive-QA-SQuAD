@@ -1,0 +1,31 @@
+{
+  "run_cfg": {
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "patience": 2,
+    "train_fraction": 1.0,
+    "arch": "pretrained",
+    "encoder": "bert-base-uncased",
+    "lr": 3e-05,
+    "batch_size": 16,
+    "epochs": 2,
+    "evals_per_epoch": 2
+  },
+  "tokenizer": "bert-base-uncased",
+  "max_length": 384,
+  "doc_stride": 128,
+  "max_question_tokens": 64,
+  "max_answer_length": 30,
+  "n_best": 20,
+  "best_eval": {
+    "step": 5533,
+    "epoch": 1.0,
+    "train_loss": 1.1022017471597305,
+    "val_loss": 1.0481584500134522,
+    "exact_match": 79.97161778618732,
+    "f1": 87.3478330686371,
+    "elapsed_min": 19.23282610575358,
+    "eval_seconds": 44.306429386138916
+  }
+}

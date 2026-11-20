@@ -12,7 +12,31 @@ The system reads a **paragraph** and a **question** and predicts the **start** a
 
 ## Results (SQuAD 1.1 validation set, 10,570 questions)
 
-⟪RESULTS⟫
+**Experiment A – approaches** (full training data, 384 tokens)
+
+| Approach | Params | Train time | Peak GPU | Inference (val) | EM | F1 |
+|---|---|---|---|---|---|---|
+| A1 Transformer from scratch | 11.1M | 12.3 min (7 ep.) | 1.32 GB | 4.8 s | 10.53 | 20.09 |
+| A2 DistilBERT (truncation) | 66.4M | 18.5 min (2 ep.) | 2.33 GB | 14.2 s | 78.06 | 85.89 |
+| A3 DistilBERT + sliding windows | 66.4M | 18.5 min (2 ep.) | 2.08 GB | 13.8 s | 77.69 | 85.67 |
+| *Reference: BERT-base + windows (1 of 2 epochs)* | 109.5M | – | – | – | 79.97 | 87.35 |
+
+**Experiment B – training-data size** (F1)
+
+| Training questions | A1 scratch | A3 DistilBERT + windows |
+|---|---|---|
+| 8,760 (10%) | 9.70 | 74.40 |
+| 21,900 (25%) | 14.32 | 80.10 |
+| 43,800 (50%) | 16.55 | 83.57 |
+| 87,599 (100%) | 20.09 | 85.67 |
+
+**Experiments C/D – input length and truncation** (A3 trained at each length)
+
+| max_length | Train min/epoch (isolated) | Peak GPU | F1 sliding windows | F1 truncation | Answers reachable with truncation |
+|---|---|---|---|---|---|
+| 128 | 17.2 | 1.28 GB | 85.23 | 71.54 | 79.7% |
+| 256 | 11.2 | 1.67 GB | 85.74 | 84.82 | 98.5% |
+| 384 | 11.0 | 2.08 GB | 85.67 | 85.46 | 99.7% |
 
 Every number comes from executing the notebooks (`results/experiment_logs.csv`, `results/evaluation_results.csv`). Hardware: NVIDIA RTX 4050 Laptop GPU (6 GB), bf16 mixed precision.
 
@@ -85,7 +109,7 @@ python -m nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 --o
 
 **Caching.** Every training run stores `results/logs/history_<run>.json` and its best checkpoint. When they exist, notebooks reload them and replay the saved training log instead of retraining. This keeps the notebooks re-runnable within minutes.
 
-**Measured run times** (RTX 4050 Laptop, 2 epochs unless stated): A1 13.4 min (7 epochs, early-stopped), A2 19.7 min, A3 19.7 min. Experiments B–D take about 90 min in total.
+**Measured run times** (RTX 4050 Laptop, 2 epochs unless stated): A1 13.4 min (7 epochs, early-stopped), A2 19.7 min, A3 19.7 min (including validation passes). Experiments B–D need ≈1.5 h of GPU time (estimated from isolated throughput; some runs were executed concurrently to save wall-clock time).
 
 ## Loading and testing the trained models
 
@@ -116,7 +140,7 @@ Each model folder contains `best_model.pt` (PyTorch `state_dict`), `run_config.j
 * Fixed seed 42 for Python, NumPy, PyTorch, the batch sampler and subset sampling. cuDNN is deterministic, though GPU attention kernels can still cause tiny run-to-run differences. That is why the A2-vs-A3 comparison uses a paired bootstrap.
 * Model selection uses the official dev set, because the SQuAD test set is hidden. At most 4 checkpoints per run are compared, so the optimistic bias is small.
 * **Windows-specific workarounds in the code:**
-  * On the development PC a Windows *Application Control* policy blocks a compiled dependency of the `datasets` package. `eqa.load_squad()` therefore falls back to downloading the identical parquet files with `huggingface_hub`.
+  * During development a Windows *Application Control* policy blocked a compiled dependency of the `datasets` package. `eqa.load_squad()` then falls back to downloading the identical parquet files with `huggingface_hub`. Both paths give the same data, and the notebooks print which one was used.
   * Importing `torch` and then `pyarrow` before OpenSSL is initialised crashes Python at the first HTTPS request. `eqa_lib` creates an SSL context first, so always import `eqa_lib` before `torch`.
 
 ## References

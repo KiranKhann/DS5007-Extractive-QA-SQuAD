@@ -1,0 +1,212 @@
+{
+  "run_name": "A3_L256",
+  "config": {
+    "arch": "pretrained",
+    "encoder": "distilbert-base-uncased",
+    "input_strategy": "sliding_window",
+    "max_length": 256,
+    "doc_stride": 85,
+    "lr": 5e-05,
+    "batch_size": 16,
+    "epochs": 2,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "evals_per_epoch": 1,
+    "patience": 2,
+    "train_fraction": 1.0
+  },
+  "train_log": [
+    {
+      "step": 604,
+      "epoch": 0.099933818663137,
+      "loss": 3.559485787390084,
+      "lr": 2.5e-05
+    },
+    {
+      "step": 1208,
+      "epoch": 0.199867637326274,
+      "loss": 1.8409503199998907,
+      "lr": 5e-05
+    },
+    {
+      "step": 1812,
+      "epoch": 0.299801455989411,
+      "loss": 1.5319542294701203,
+      "lr": 4.7224264705882356e-05
+    },
+    {
+      "step": 2416,
+      "epoch": 0.399735274652548,
+      "loss": 1.3978675625083463,
+      "lr": 4.4448529411764704e-05
+    },
+    {
+      "step": 3020,
+      "epoch": 0.499669093315685,
+      "loss": 1.3733878970047495,
+      "lr": 4.1672794117647064e-05
+    },
+    {
+      "step": 3624,
+      "epoch": 0.599602911978822,
+      "loss": 1.2589150578375683,
+      "lr": 3.889705882352941e-05
+    },
+    {
+      "step": 4228,
+      "epoch": 0.699536730641959,
+      "loss": 1.2390503878427657,
+      "lr": 3.6121323529411766e-05
+    },
+    {
+      "step": 4832,
+      "epoch": 0.799470549305096,
+      "loss": 1.1881540962402395,
+      "lr": 3.334558823529412e-05
+    },
+    {
+      "step": 5436,
+      "epoch": 0.899404367968233,
+      "loss": 1.1599913086520126,
+      "lr": 3.0569852941176474e-05
+    },
+    {
+      "step": 6040,
+      "epoch": 0.99933818663137,
+      "loss": 1.145958719071963,
+      "lr": 2.7794117647058824e-05
+    },
+    {
+      "step": 6644,
+      "epoch": 1.0992720052945069,
+      "loss": 0.8165574071059625,
+      "lr": 2.501838235294118e-05
+    },
+    {
+      "step": 7248,
+      "epoch": 1.199205823957644,
+      "loss": 0.8222552695317774,
+      "lr": 2.224264705882353e-05
+    },
+    {
+      "step": 7852,
+      "epoch": 1.2991396426207809,
+      "loss": 0.8246098778993878,
+      "lr": 1.9466911764705883e-05
+    },
+    {
+      "step": 8456,
+      "epoch": 1.399073461283918,
+      "loss": 0.839578924984332,
+      "lr": 1.6691176470588234e-05
+    },
+    {
+      "step": 9060,
+      "epoch": 1.4990072799470548,
+      "loss": 0.8135895250204778,
+      "lr": 1.391544117647059e-05
+    },
+    {
+      "step": 9664,
+      "epoch": 1.598941098610192,
+      "loss": 0.806015405409186,
+      "lr": 1.1139705882352942e-05
+    },
+    {
+      "step": 10268,
+      "epoch": 1.6988749172733288,
+      "loss": 0.7718759055267896,
+      "lr": 8.363970588235294e-06
+    },
+    {
+      "step": 10872,
+      "epoch": 1.798808735936466,
+      "loss": 0.7887616949217604,
+      "lr": 5.588235294117647e-06
+    },
+    {
+      "step": 11476,
+      "epoch": 1.8987425545996028,
+      "loss": 0.762851036579305,
+      "lr": 2.8125e-06
+    },
+    {
+      "step": 12080,
+      "epoch": 1.99867637326274,
+      "loss": 0.7541293622000723,
+      "lr": 3.6764705882352945e-08
+    }
+  ],
+  "evals": [
+    {
+      "step": 6044,
+      "epoch": 1.0,
+      "train_loss": 1.5693789231587845,
+      "val_loss": 1.0976906737706411,
+      "exact_match": 75.28855250709555,
+      "f1": 83.64530594863261,
+      "elapsed_min": 58.75862658023834,
+      "eval_seconds": 24.511834621429443,
+      "forward_seconds": 17.602837562561035
+    },
+    {
+      "step": 12088,
+      "epoch": 2.0,
+      "train_loss": 0.8001122831925996,
+      "val_loss": 1.082243173518606,
+      "exact_match": 77.55912961210974,
+      "f1": 85.73927806126545,
+      "elapsed_min": 70.9285206079483,
+      "eval_seconds": 24.86717700958252,
+      "forward_seconds": 17.454079389572144
+    }
+  ],
+  "log_lines": [
+    "=== A3_L256: 66.36M params | 87,599 questions -> 96,693 inputs | 2 epochs x 6044 steps (batch 16, lr 5e-05) ===",
+    "[A3_L256] epoch 1/2 step   604/6044 | train loss 3.5595 | lr 2.50e-05 |   1.2 min, ETA  22.2 min",
+    "[A3_L256] epoch 1/2 step  1208/6044 | train loss 1.8410 | lr 5.00e-05 |   2.3 min, ETA  20.9 min",
+    "[A3_L256] epoch 1/2 step  1812/6044 | train loss 1.5320 | lr 4.72e-05 |   3.5 min, ETA  19.8 min",
+    "[A3_L256] epoch 1/2 step  2416/6044 | train loss 1.3979 | lr 4.44e-05 |   4.6 min, ETA  18.6 min",
+    "[A3_L256] epoch 1/2 step  3020/6044 | train loss 1.3734 | lr 4.17e-05 |   5.8 min, ETA  17.5 min",
+    "[A3_L256] epoch 1/2 step  3624/6044 | train loss 1.2589 | lr 3.89e-05 |   7.0 min, ETA  16.3 min",
+    "[A3_L256] epoch 1/2 step  4228/6044 | train loss 1.2391 | lr 3.61e-05 |   8.2 min, ETA  15.2 min",
+    "[A3_L256] epoch 1/2 step  4832/6044 | train loss 1.1882 | lr 3.33e-05 |  56.0 min, ETA  84.1 min",
+    "[A3_L256] epoch 1/2 step  5436/6044 | train loss 1.1600 | lr 3.06e-05 |  57.1 min, ETA  69.9 min",
+    "[A3_L256] epoch 1/2 step  6040/6044 | train loss 1.1460 | lr 2.78e-05 |  58.3 min, ETA  58.4 min",
+    "[A3_L256] >>> eval @ epoch 1.00: train loss 1.5694 | val loss 1.0977 | EM 75.29 | F1 83.65  (new best)",
+    "[A3_L256] epoch 2/2 step   600/6044 | train loss 0.8166 | lr 2.50e-05 |  59.9 min, ETA  48.8 min",
+    "[A3_L256] epoch 2/2 step  1204/6044 | train loss 0.8223 | lr 2.22e-05 |  61.1 min, ETA  40.5 min",
+    "[A3_L256] epoch 2/2 step  1808/6044 | train loss 0.8246 | lr 1.95e-05 |  62.3 min, ETA  33.4 min",
+    "[A3_L256] epoch 2/2 step  2412/6044 | train loss 0.8396 | lr 1.67e-05 |  63.5 min, ETA  27.1 min",
+    "[A3_L256] epoch 2/2 step  3016/6044 | train loss 0.8136 | lr 1.39e-05 |  64.6 min, ETA  21.5 min",
+    "[A3_L256] epoch 2/2 step  3620/6044 | train loss 0.8060 | lr 1.11e-05 |  65.8 min, ETA  16.4 min",
+    "[A3_L256] epoch 2/2 step  4224/6044 | train loss 0.7719 | lr 8.36e-06 |  67.0 min, ETA  11.8 min",
+    "[A3_L256] epoch 2/2 step  4828/6044 | train loss 0.7888 | lr 5.59e-06 |  68.2 min, ETA   7.6 min",
+    "[A3_L256] epoch 2/2 step  5432/6044 | train loss 0.7629 | lr 2.81e-06 |  69.3 min, ETA   3.7 min",
+    "[A3_L256] epoch 2/2 step  6036/6044 | train loss 0.7541 | lr 3.68e-08 |  70.5 min, ETA   0.0 min",
+    "[A3_L256] >>> eval @ epoch 2.00: train loss 0.8001 | val loss 1.0822 | EM 77.56 | F1 85.74  (new best)",
+    "[A3_L256] done: 70.9 min (70.1 min training, 0.8 min validation) | best F1 85.74 | peak GPU memory 1.67 GB"
+  ],
+  "n_params": 66364418,
+  "n_train_examples": 87599,
+  "n_train_features": 96693,
+  "steps_per_epoch": 6044,
+  "n_val_features": 11945,
+  "best": {
+    "step": 12088,
+    "epoch": 2.0,
+    "train_loss": 0.8001122831925996,
+    "val_loss": 1.082243173518606,
+    "exact_match": 77.55912961210974,
+    "f1": 85.73927806126545,
+    "elapsed_min": 70.9285206079483,
+    "eval_seconds": 24.86717700958252,
+    "forward_seconds": 17.454079389572144
+  },
+  "train_time_min": 70.9415366490682,
+  "pure_train_time_min": 70.11855312188466,
+  "epochs_run": 2.0,
+  "peak_gpu_mem_gb": 1.6681933403015137,
+  "model_size_mb": 265.499385
+}

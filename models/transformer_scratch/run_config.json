@@ -1,0 +1,40 @@
+{
+  "run_cfg": {
+    "arch": "scratch",
+    "scratch": {
+      "d_model": 256,
+      "n_heads": 4,
+      "n_layers": 4,
+      "d_ff": 1024,
+      "max_len": 512,
+      "dropout": 0.1
+    },
+    "input_strategy": "sliding_window",
+    "max_length": 384,
+    "doc_stride": 128,
+    "lr": 0.0005,
+    "batch_size": 32,
+    "epochs": 10,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "evals_per_epoch": 1,
+    "patience": 2,
+    "train_fraction": 1.0
+  },
+  "tokenizer": "bert-base-uncased",
+  "max_question_tokens": 64,
+  "max_answer_length": 30,
+  "n_best": 20,
+  "best_eval": {
+    "step": 13835,
+    "epoch": 5.0,
+    "train_loss": 3.159533038913105,
+    "val_loss": 4.074978345933229,
+    "exact_match": 10.529801324503312,
+    "f1": 20.094212920419526,
+    "elapsed_min": 9.254221510887145,
+    "eval_seconds": 9.207289934158325,
+    "forward_seconds": 4.276583433151245
+  }
+}

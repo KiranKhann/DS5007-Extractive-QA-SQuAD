@@ -1,0 +1,4 @@
+max_length,doc_stride,windows (sliding),windows per example,mean tokens per window,answers reachable – truncation (%),answers reachable – sliding windows (%)
+128,42,23473,2.22,111.55,79.73,100.0
+256,85,11945,1.13,167.96,98.5,100.0
+384,128,10784,1.02,175.96,99.68,100.0

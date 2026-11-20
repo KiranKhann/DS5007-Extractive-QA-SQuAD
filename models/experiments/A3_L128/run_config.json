@@ -1,0 +1,33 @@
+{
+  "run_cfg": {
+    "arch": "pretrained",
+    "encoder": "distilbert-base-uncased",
+    "input_strategy": "sliding_window",
+    "max_length": 128,
+    "doc_stride": 42,
+    "lr": 5e-05,
+    "batch_size": 16,
+    "epochs": 2,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "evals_per_epoch": 1,
+    "patience": 2,
+    "train_fraction": 1.0
+  },
+  "tokenizer": "bert-base-uncased",
+  "max_question_tokens": 64,
+  "max_answer_length": 30,
+  "n_best": 20,
+  "best_eval": {
+    "step": 23294,
+    "epoch": 2.0,
+    "train_loss": 0.5659996877313511,
+    "val_loss": 0.8359086621794414,
+    "exact_match": 77.59697256385998,
+    "f1": 85.22517497917991,
+    "elapsed_min": 69.43958157698313,
+    "eval_seconds": 27.94637131690979,
+    "forward_seconds": 22.475613117218018
+  }
+}
